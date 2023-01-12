@@ -1,0 +1,17 @@
+.footer{
+    background-color: white;
+    padding: 15%;
+    border: solid 5px var(--GrisClaro);
+    box-sizing: border-box; 
+    width:100%;
+}
+.footer i{
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-top: 20%;
+    padding:5px 101px ;
+}
+.footer article{
+    padding: 10px;
+    color: var(--GrisOscuro);
+}

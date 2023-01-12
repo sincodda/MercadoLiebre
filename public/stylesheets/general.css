@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Amarillo);
+   }
+   a {
+    text-decoration: none;
+    color:var(--GrisOscuro);
+   }
+   li{
+    list-style: none;
+    padding: 5px;
+   }
+   ul,ol{
+    padding: 20px;
+   }
+   h4{
+    font-family: 'Roboto';
+    font-size: 25px ;
+    text-transform: uppercase;
+   }
