@@ -5,6 +5,9 @@
     width: 50%;
     margin: 10px;
 }
+.header__nav--product{
+    background-color: var(--GrisClaro);
+}
 .header__nav--ultimaVista {
     font-size: 18px;
     text-transform: uppercase;  
@@ -21,10 +24,10 @@
     box-sizing: border-box;
 }
 .header__nav__article img {
-padding:4px 20px;
+ padding:8px 20px;
 /* height: 49px; */
-margin-left:24px;
-/* box-sizing: border-box; */
+ margin-left:24px;
+ /* box-sizing: border-box; */
 }
 .header__nav__article--producto{
     font-size: 18px;
@@ -42,4 +45,28 @@ margin-left:24px;
 }
 .header__nav__articule h4{ 
     font-size: 16px;
+}
+/* medida tablet  */
+@media (min-width: 425px) {
+    .burger--menu {
+        display: none;
+    }
+
+    .header__nav--menu {
+        display: none;
+    }
+    .header__nav__article--producto {
+        display: block;
+        
+    }
+    .header__nav__article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* medida desktop  */
+@media (min-width: 769px) {
+    .index__header--buscar {
+        width: 50%;
+    }
 }
