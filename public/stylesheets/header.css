@@ -1,9 +1,30 @@
-.index__header {
-    padding: 10px;
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
 }
+
 .index__header--logotipo{
-    width: 50%;
-    margin: 10px;
+    width: 60%;
+    margin: 20px;
+}
+
+.index__header--buscar{
+    width: 100%;
+    position:end;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    
+}
+.index__header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 .header__nav--product{
     background-color: var(--GrisClaro);
@@ -11,33 +32,94 @@
 .header__nav--ultimaVista {
     font-size: 18px;
     text-transform: uppercase;  
+    margin-bottom: 20px ;
 }
 .burger--menu {
     background-color: var(--Celeste);
-    color: white;
+    color:white;
     text-align: center;
     padding: 15px;
     border-radius: 7px;
     width: 47px;
     height: 49px;
     margin-left: 150px;
+    margin-right: 150px;
     box-sizing: border-box;
 }
+
 .header__nav__article img {
  padding:8px 20px;
-/* height: 49px; */
  margin-left:24px;
- /* box-sizing: border-box; */
+ 
 }
+.header__nav--banner{
+  display: none;
+}
+.header__nav__article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    
+    
+   }
+   .header__nav--menu{
+    display: none;
+   }
 .header__nav__article--producto{
     font-size: 18px;
     text-transform: uppercase;
 }
-.header__nav__articule ,h3,h4,p{
+.header__nav__articule ,h3,h4{
     padding: 0px;
     text-align: center;
     display: block;
     width:90%;
+}
+.header__nav__articule--prd p{
+    padding: 0px;
+    text-align: center;
+    display: block;
+    width:90%;
+}
+.header__nav__articule--prd {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: green;
+        border-radius: 50%;
+        position: center;
+        right: 20px;
+        top: 15px;
+       }
+.header__nav__article--descuento{
+    color: green;
+}
+
+.header__nav__article--prd img {
+    background-color: white;
+    margin-bottom:0px;
+    width: 180px;
+  
+}
+.header__nav__article--prd {
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    background-color: white;
+    margin-bottom:20px;
+    border: 1px solid black;
+    width: 70%;
+  
+}
+.header__nav--ultimaVista{
+   background-color: var(--GrisClaro);
+   margin-left: 0px;
+   padding: 0px;
+   
+
 }
 .header__nav__articule h3{ 
     font-size: 18px;
@@ -47,26 +129,81 @@
     font-size: 16px;
 }
 /* medida tablet  */
-@media (min-width: 425px) {
+@media (min-width: 768px) {
     .burger--menu {
         display: none;
     }
+    .header__nav--menu{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+    }
+    .header__nav--ul li{
+        display:inline; 
+        width: 15%;
+         }
+    .index__header--logotipo{
+        width: 24%;
+        margin: 20px;
+        margin-top:30px;
+        margin: left 20px;
+        }
+     
+    .header__nav__menu--ul {
+        display:inline;
+    
+    }
 
-    .header__nav--menu {
-        display: none;
-    }
-    .header__nav__article--producto {
-        display: block;
+    .header__nav__article--prd {
+        width: 50% ;
         
-    }
-    .header__nav__article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
 /* medida desktop  */
-@media (min-width: 769px) {
-    .index__header--buscar {
-        width: 50%;
+@media (min-width:1180px) {
+    .header__nav--menu li {
+        width: 122px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    .index__header__compra--cuotas{
+        margin: 0px;
+        margin-top: 10px;
+        margin-left:10px;
+        width: 44%;
+    }
+    .header__nav__article--prd {
+        width:15% ; 
+        
+   /*      display: inline-block; */
+    }
+    .index__header--logotipo{
+        width: 24%;
+        margin: 20px;
+        margin-top:30px;
+        margin: left 20px;
+    }
+    .header__nav--ul li{
+     display:inline; 
+      }
+    .index__header--buscar{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 10px;  
+    }
+    .index__header--buscar i{
+        width: 3%;
+        margin-bottom: 3px;
+        margin-right: 4px;  
+    }
+    .index__header--buscar input{
+        width: 15%;
+        margin-bottom: 2px;
+        margin-right:2px;  
+    }
+    .header__nav--banner{
+        height:200px;
+        height: 80%;
     }
 }

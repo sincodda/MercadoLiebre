@@ -1,6 +1,9 @@
 .footer{
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
     background-color: white;
-    padding: 15%;
+    padding: 10%;
     border: solid 5px var(--GrisClaro);
     box-sizing: border-box; 
     width:100%;
@@ -8,10 +11,29 @@
 .footer i{
     color: var(--Celeste);
     font-size: 2em;
-    margin-top: 20%;
+    margin-top: 10%;
     padding:5px 101px ;
 }
 .footer article{
     padding: 10px;
     color: var(--GrisOscuro);
 }
+/* medida tablet  */
+@media (min-width: 768px) {
+.footer {
+    flex-direction: column;
+    flex-direction: center;
+    }
+ .footer i {
+    padding-right:150% ;
+ }
+}
+
+/* medida desktop  */
+@media (min-width:1180px) {
+.footer i{
+        font-size: 3em;
+        margin-top: 20px;
+        padding:15px 500px ;
+    }
+ }
